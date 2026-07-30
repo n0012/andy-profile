@@ -1,11 +1,14 @@
 import {
   Accessibility,
   Award,
+  Bike,
   BookOpen,
+  CalendarDays,
   Car,
   ChefHat,
   Compass,
   Dog,
+  Music,
   GraduationCap,
   Handshake,
   Mail,
@@ -232,6 +235,27 @@ const HONORS = [
     title: 'Pioneer Award',
     year: '2005',
     detail: 'University of Denver — among the university’s most prestigious student honors',
+  },
+]
+
+const COMMUNITY = [
+  {
+    icon: Music,
+    title: 'Gay men’s chorus',
+    detail:
+      'Sang with the gay men’s choruses of Orange County and San Diego — years of showing up every week for a community that makes something together.',
+  },
+  {
+    icon: Bike,
+    title: 'AIDS/LifeCycle',
+    detail:
+      'Rode two years of the 545-mile fundraiser from San Francisco to Los Angeles, benefiting HIV/AIDS services. Months of training and fundraising behind each ride.',
+  },
+  {
+    icon: CalendarDays,
+    title: 'Twenty-five-year reunion',
+    detail:
+      'Organized my high school class’s 25-year reunion — tracking down a class scattered across the country, building the registration and communications from scratch, and lining up the venue and sponsors.',
   },
 ]
 
@@ -602,19 +626,36 @@ const RolePitch = ({ role }) => (
 const Personal = () => (
   <section aria-labelledby="personal-heading" className="border-t border-sand-deep bg-clay-soft">
     <div className="mx-auto max-w-4xl px-6 py-14 md:py-20">
-      <SectionLabel icon={User} text="Off the clock" />
+      <SectionLabel icon={User} text="Outside of work" />
       <h2 id="personal-heading" className="mt-3 font-display text-3xl font-semibold text-ink">
         The person, not just the resume
       </h2>
       <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
         A fifth-generation Coloradan, back home in Englewood after two decades on the
-        California coast.
+        California coast. The instinct to build community does not switch off at five.
       </p>
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
+
+      <h3 className="mt-10 text-sm font-semibold uppercase tracking-[0.15em] text-clay">
+        Community and stewardship
+      </h3>
+      <div className="mt-5 grid gap-6 md:grid-cols-3">
+        {COMMUNITY.map(({ icon: Icon, title, detail }) => (
+          <div key={title} className="rounded-xl border border-pine/20 bg-white p-6 shadow-sm">
+            <Icon className="h-6 w-6 text-pine" aria-hidden="true" />
+            <h4 className="mt-4 font-display text-xl font-semibold text-ink">{title}</h4>
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{detail}</p>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="mt-12 text-sm font-semibold uppercase tracking-[0.15em] text-clay">
+        Off the clock
+      </h3>
+      <div className="mt-5 grid gap-6 md:grid-cols-3">
         {PERSONAL.map(({ icon: Icon, title, detail }) => (
           <div key={title} className="rounded-xl border border-clay/20 bg-white p-6 shadow-sm">
             <Icon className="h-6 w-6 text-clay" aria-hidden="true" />
-            <h3 className="mt-4 font-display text-xl font-semibold text-ink">{title}</h3>
+            <h4 className="mt-4 font-display text-xl font-semibold text-ink">{title}</h4>
             <p className="mt-2 text-sm leading-relaxed text-ink-soft">{detail}</p>
           </div>
         ))}
