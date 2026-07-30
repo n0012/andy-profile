@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+
+# Source application materials — contain home address, phone, and reference
+# contact details. Never commit these to a public repo.
+sources/
+
+# Working notes. Quote the raw resume verbatim, so they carry redacted personal
+# details. This repo is PUBLIC — keep local.
+PLAN.md
