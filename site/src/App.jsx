@@ -288,6 +288,39 @@ const CU_FIT = [
   },
 ]
 
+const MSU_FIT = [
+  {
+    icon: Handshake,
+    title: 'Belonging is the whole career',
+    body: 'Nearly twenty years drawn to the work that helps students find connection, purpose, and confidence. Admissions, student affairs, college counseling, disability access — different offices, one consistent aim: communities where students feel supported, challenged, and empowered.',
+  },
+  {
+    icon: Users,
+    title: 'Advising student leaders and affinity groups',
+    body: 'Co-advisor to the GSA and LGBTQ+ student affinity groups at Francis Parker, and co-advisor to an advisory group followed from 9th through 12th grade. Today I volunteer with the LGBTQ+ Affinity Group and Student Affairs events at ACC. Advising student organizations is familiar ground.',
+  },
+  {
+    icon: Compass,
+    title: 'Leading teams, staying student-centered',
+    body: 'Supervised staff and served on the Upper School leadership team across three roles at Francis Parker, including Interim Associate Head. Effective leadership is grounded in collaboration and listening — and in environments where colleagues, not only students, feel valued.',
+  },
+  {
+    icon: BookOpen,
+    title: 'Designing programs, not just running them',
+    body: 'Built "Pastries and Planning" for TRIO students facing executive-functioning barriers, accessible workshops on study skills and note taking at ACC, and a full asynchronous course for aspiring counselors at UCLA Extension. I like building the thing that brings people together.',
+  },
+  {
+    icon: Accessibility,
+    title: 'MSU Denver’s students are the ones I serve now',
+    body: 'In TRIO I served first-generation, low-income, and disabled students directly. I work at a Colorado community college today — many of these students transfer to MSU Denver. I know this population because I am with them every week.',
+  },
+  {
+    icon: Award,
+    title: 'Steady when it gets complicated',
+    body: 'Appointed leader of the Student Support Team at Francis Parker, meeting weekly on students of concern, and recognized with the Spirit of Service Award for going above and beyond for the community. Complex student situations are where this work is actually decided.',
+  },
+]
+
 const SKILLS = [
   'Academic Advising',
   'Student Counseling',
@@ -317,7 +350,7 @@ export default function App({ variant }) {
       <Hero />
 
       <main id="main">
-        {variant === 'cu' && <WhyCU />}
+        {ROLES[variant] && <RolePitch role={ROLES[variant]} />}
         <Stats />
         <Approach />
         <Experience />
@@ -522,22 +555,38 @@ const Education = () => (
   </section>
 )
 
-const WhyCU = () => (
-  <section aria-labelledby="cu-heading" className="border-b border-sand-deep bg-pine-deep text-white">
+const ROLES = {
+  cu: {
+    institution: 'University of Colorado Boulder',
+    title: 'Associate Director for Outreach and Engagement',
+    lede: 'Nearly twenty years in higher education, guided by a simple belief: every student deserves someone who will help them see college as a place where they belong.',
+    fit: CU_FIT,
+    closer:
+      'I enjoy thinking strategically while never losing sight of the individual student whose future may be changed by the decisions we make.',
+  },
+  msu: {
+    institution: 'Metropolitan State University of Denver',
+    title: 'Associate Director of Belonging and Student Engagement',
+    lede: 'Higher education changes lives not only through academics, but through relationships, mentorship, leadership opportunities, and communities where students know they belong.',
+    fit: MSU_FIT,
+    closer:
+      'I would be honored to help shape experiences that enrich the lives of Roadrunners, inside and outside the classroom.',
+  },
+}
+
+const RolePitch = ({ role }) => (
+  <section aria-labelledby="role-heading" className="border-b border-sand-deep bg-pine-deep text-white">
     <div className="mx-auto max-w-4xl px-6 py-14 md:py-20">
       <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-pine-soft">
         <Compass className="h-4 w-4" aria-hidden="true" />
-        University of Colorado Boulder
+        {role.institution}
       </p>
-      <h2 id="cu-heading" className="mt-3 font-display text-3xl font-semibold md:text-4xl">
-        Associate Director for Outreach and Engagement
+      <h2 id="role-heading" className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+        {role.title}
       </h2>
-      <p className="mt-5 max-w-2xl text-lg leading-relaxed text-pine-soft">
-        Nearly twenty years in higher education, guided by a simple belief: every student
-        deserves someone who will help them see college as a place where they belong.
-      </p>
+      <p className="mt-5 max-w-2xl text-lg leading-relaxed text-pine-soft">{role.lede}</p>
       <div className="mt-10 grid gap-5 md:grid-cols-2">
-        {CU_FIT.map(({ icon: Icon, title, body }) => (
+        {role.fit.map(({ icon: Icon, title, body }) => (
           <div key={title} className="rounded-xl bg-white/10 p-6 ring-1 ring-white/15">
             <Icon className="h-6 w-6 text-pine-soft" aria-hidden="true" />
             <h3 className="mt-4 font-display text-xl font-semibold">{title}</h3>
@@ -545,10 +594,7 @@ const WhyCU = () => (
           </div>
         ))}
       </div>
-      <p className="mt-10 max-w-2xl leading-relaxed text-pine-soft">
-        I enjoy thinking strategically while never losing sight of the individual student
-        whose future may be changed by the decisions we make.
-      </p>
+      <p className="mt-10 max-w-2xl leading-relaxed text-pine-soft">{role.closer}</p>
     </div>
   </section>
 )
