@@ -257,24 +257,34 @@ const PERSONAL = [
 // never lands on a page arguing why he wants to work somewhere else.
 const CU_FIT = [
   {
-    icon: MapPin,
-    title: 'Colorado roots, not a relocation',
-    body: 'Fifth-generation Colorado native, University of Denver graduate, and a board member of the Rocky Mountain Association of College Admission Counseling. The counselor relationships this role depends on are ones I have already spent years building.',
+    icon: Users,
+    title: 'Supervising and mentoring teams',
+    body: 'The role supervises four. I have hired, onboarded, and managed staff at every stop — program and visit staff at the University of Denver, the librarian and assistant librarian as Interim Associate Head of Upper School, peer advisors in TRIO, and full and contract hires at COLLEDGE. Nineteen years of it, including formal observation and evaluation of faculty.',
   },
   {
-    icon: Users,
-    title: 'Recruitment at scale',
-    body: 'Six years in admission at the University of Denver — national travel, regional territory management, information sessions for audiences of up to 350, a 3,000-student interview program, and 500 alumni and staff volunteers coordinated across 30 cities.',
+    icon: Compass,
+    title: 'Both pathways, from both sides',
+    body: 'The role covers First Year and Transfer. I recruited first-year students nationally for six years at DU — and today I work inside a Colorado community college, alongside the exact students who transfer to CU Boulder. I know what the transfer pathway looks like from the sending end, which is where it usually breaks.',
+  },
+  {
+    icon: MapPin,
+    title: 'Colorado roots, not a relocation',
+    body: 'Fifth-generation Colorado native, University of Denver graduate, and an RMACAC board member. The rural districts, community organizations, and counselor relationships this position depends on are ones I have spent a career building here.',
+  },
+  {
+    icon: BookOpen,
+    title: 'Building the training, not just delivering it',
+    body: 'The role trains the recruitment team. I taught "Counseling the College Bound Student" at UCLA Extension for three years, advising 25–50 aspiring counselors per term, and co-chaired the WACAC Summer Counselor Tour. Designing enablement for other professionals is work I have already done at scale.',
   },
   {
     icon: Handshake,
     title: 'Trust rather than transactions',
-    body: 'Successful recruitment begins with authentic partnerships among school counselors, educators, families, and community leaders — relationships that outlast a single admission cycle rather than ending at deposit day.',
+    body: 'Recruitment begins with authentic partnerships among school counselors, educators, families, and community leaders — relationships that outlast a single admission cycle rather than ending at deposit day.',
   },
   {
     icon: Accessibility,
-    title: 'The students furthest from the door',
-    body: 'Outreach designed for rural communities, transfer pathways, and historically underserved populations — informed by a current caseload of 250+ students navigating disability accommodations.',
+    title: 'Equitable review, from experience',
+    body: 'The role informs admission review so every applicant gets fair consideration. I have read applications on the university side and written the recommendations on the counseling side, and I now spend my days on accommodations and access law. I know concretely where a review process quietly disadvantages a student.',
   },
 ]
 
