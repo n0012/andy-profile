@@ -2,11 +2,15 @@ import {
   Accessibility,
   Award,
   BookOpen,
+  Car,
+  ChefHat,
   Compass,
+  Dog,
   GraduationCap,
   Handshake,
   Mail,
   MapPin,
+  User,
   Users,
 } from 'lucide-react'
 
@@ -231,6 +235,49 @@ const HONORS = [
   },
 ]
 
+const PERSONAL = [
+  {
+    icon: ChefHat,
+    title: 'In the kitchen',
+    detail: 'An enthusiastic cook — the household job nobody has to be talked into.',
+  },
+  {
+    icon: Car,
+    title: 'Classic cars',
+    detail: 'A long-running soft spot for the ones built before the computers took over.',
+  },
+  {
+    icon: Dog,
+    title: 'Tater',
+    detail: 'Three-year-old Lab/Pit mix, and a reliably poor influence on productivity.',
+  },
+]
+
+// Role-specific pitch. Lives on its own page (cu.html) so the MSU Denver committee
+// never lands on a page arguing why he wants to work somewhere else.
+const CU_FIT = [
+  {
+    icon: MapPin,
+    title: 'Colorado roots, not a relocation',
+    body: 'Fifth-generation Colorado native, University of Denver graduate, and a board member of the Rocky Mountain Association of College Admission Counseling. The counselor relationships this role depends on are ones I have already spent years building.',
+  },
+  {
+    icon: Users,
+    title: 'Recruitment at scale',
+    body: 'Six years in admission at the University of Denver — national travel, regional territory management, information sessions for audiences of up to 350, a 3,000-student interview program, and 500 alumni and staff volunteers coordinated across 30 cities.',
+  },
+  {
+    icon: Handshake,
+    title: 'Trust rather than transactions',
+    body: 'Successful recruitment begins with authentic partnerships among school counselors, educators, families, and community leaders — relationships that outlast a single admission cycle rather than ending at deposit day.',
+  },
+  {
+    icon: Accessibility,
+    title: 'The students furthest from the door',
+    body: 'Outreach designed for rural communities, transfer pathways, and historically underserved populations — informed by a current caseload of 250+ students navigating disability accommodations.',
+  },
+]
+
 const SKILLS = [
   'Academic Advising',
   'Student Counseling',
@@ -247,7 +294,7 @@ const SKILLS = [
   'Scoir',
 ]
 
-export default function App() {
+export default function App({ variant }) {
   return (
     <div className="min-h-screen bg-white font-sans text-ink antialiased">
       <a
@@ -260,12 +307,14 @@ export default function App() {
       <Hero />
 
       <main id="main">
+        {variant === 'cu' && <WhyCU />}
         <Stats />
         <Approach />
         <Experience />
         <TeachingAndService />
         <Honors />
         <Education />
+        <Personal />
       </main>
 
       <Contact />
@@ -458,6 +507,61 @@ const Education = () => (
           <p className="font-display text-lg font-semibold text-ink">BA, Journalism Studies</p>
           <p className="mt-1 text-sm text-ink-faint">University of Denver · 2005</p>
         </div>
+      </div>
+    </div>
+  </section>
+)
+
+const WhyCU = () => (
+  <section aria-labelledby="cu-heading" className="border-b border-sand-deep bg-pine-deep text-white">
+    <div className="mx-auto max-w-4xl px-6 py-14 md:py-20">
+      <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-pine-soft">
+        <Compass className="h-4 w-4" aria-hidden="true" />
+        University of Colorado Boulder
+      </p>
+      <h2 id="cu-heading" className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+        Associate Director for Outreach and Engagement
+      </h2>
+      <p className="mt-5 max-w-2xl text-lg leading-relaxed text-pine-soft">
+        Nearly twenty years in higher education, guided by a simple belief: every student
+        deserves someone who will help them see college as a place where they belong.
+      </p>
+      <div className="mt-10 grid gap-5 md:grid-cols-2">
+        {CU_FIT.map(({ icon: Icon, title, body }) => (
+          <div key={title} className="rounded-xl bg-white/10 p-6 ring-1 ring-white/15">
+            <Icon className="h-6 w-6 text-pine-soft" aria-hidden="true" />
+            <h3 className="mt-4 font-display text-xl font-semibold">{title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-pine-soft">{body}</p>
+          </div>
+        ))}
+      </div>
+      <p className="mt-10 max-w-2xl leading-relaxed text-pine-soft">
+        I enjoy thinking strategically while never losing sight of the individual student
+        whose future may be changed by the decisions we make.
+      </p>
+    </div>
+  </section>
+)
+
+const Personal = () => (
+  <section aria-labelledby="personal-heading" className="border-t border-sand-deep bg-clay-soft">
+    <div className="mx-auto max-w-4xl px-6 py-14 md:py-20">
+      <SectionLabel icon={User} text="Off the clock" />
+      <h2 id="personal-heading" className="mt-3 font-display text-3xl font-semibold text-ink">
+        The person, not just the resume
+      </h2>
+      <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
+        A fifth-generation Coloradan, back home in Englewood after two decades on the
+        California coast.
+      </p>
+      <div className="mt-10 grid gap-6 md:grid-cols-3">
+        {PERSONAL.map(({ icon: Icon, title, detail }) => (
+          <div key={title} className="rounded-xl border border-clay/20 bg-white p-6 shadow-sm">
+            <Icon className="h-6 w-6 text-clay" aria-hidden="true" />
+            <h3 className="mt-4 font-display text-xl font-semibold text-ink">{title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{detail}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>
