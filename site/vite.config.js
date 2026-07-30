@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// base must match the GitHub Pages project subpath, or every asset 404s in prod.
 import { resolve } from 'node:path'
 
+// Served from the apex of andylosier.com, so base is root. If this ever moves back
+// to a github.io project path, base must return to '/andy-profile/' or every asset 404s.
 export default defineConfig({
   plugins: [react()],
-  base: '/andy-profile/',
+  base: '/',
   build: {
     rollupOptions: {
       input: {
