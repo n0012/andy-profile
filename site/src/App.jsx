@@ -249,7 +249,7 @@ const PERSONAL = [
   {
     icon: Dog,
     title: 'Tater',
-    detail: 'Three-year-old Lab/Pit mix, and a reliably poor influence on productivity.',
+    detail: 'Three-year-old Labrador, and a reliably poor influence on productivity.',
   },
 ]
 
