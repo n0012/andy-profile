@@ -14,6 +14,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         cu: resolve(__dirname, 'cu.html'),
         msu: resolve(__dirname, 'msu.html'),
+        dps: resolve(__dirname, 'dps.html'),
       },
     },
   },
