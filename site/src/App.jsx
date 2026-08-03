@@ -3,6 +3,7 @@ import {
   Award,
   Bike,
   BookOpen,
+  Briefcase,
   CalendarDays,
   Car,
   ChefHat,
@@ -277,8 +278,8 @@ const PERSONAL = [
   },
 ]
 
-// Role-specific pitch. Lives on its own page (cu.html) so the MSU Denver committee
-// never lands on a page arguing why he wants to work somewhere else.
+// Role-specific pitches. Each gets its own page (cu.html, msu.html, dps.html) so no
+// committee ever lands on a page arguing why he wants to work somewhere else.
 const CU_FIT = [
   {
     icon: Users,
@@ -342,6 +343,39 @@ const MSU_FIT = [
     icon: Award,
     title: 'Steady when it gets complicated',
     body: 'Appointed leader of the Student Support Team at Francis Parker, meeting weekly on students of concern, and recognized with the Spirit of Service Award for going above and beyond for the community. Complex student situations are where this work is actually decided.',
+  },
+]
+
+const DPS_FIT = [
+  {
+    icon: Compass,
+    title: 'This job description is the career',
+    body: 'Career and college readiness is not an adjacent interest — it is what I have done for twenty years. Director of College Counseling at Francis Parker, guiding a quarter of each junior and senior class through postsecondary planning; 10th Grade Dean, working with 140 students and families a year on the plan before the plan. ICAP is the formal name for work I have led informally since 2005.',
+  },
+  {
+    icon: GraduationCap,
+    title: 'Twelve college credits runs through the community college',
+    body: 'The goal of 12 college credits for every graduate depends on concurrent enrollment working — and that pipeline lands at institutions like the one I work in today. At Arapahoe Community College I have evaluated transcripts for transferability and prerequisite credit in Banner and advised students on academic planning. I know where credits stick and where they quietly fail to count.',
+  },
+  {
+    icon: Briefcase,
+    title: 'Partnerships with employers and institutions',
+    body: 'At COLLEDGE I built business development partnerships, including a college night program with UCLA and USC. At the University of Denver I coordinated 300 alumni and 200 faculty and staff volunteers across 30 cities. Cultivating partners who show up year after year — businesses, colleges, community organizations — is the part of this role I have the longest track record in.',
+  },
+  {
+    icon: Users,
+    title: 'Leading at district scale',
+    body: 'At DU I ran the biannual Ammi Hyde program serving 3,000+ prospective undergraduates on a $350,000+ budget with staff reporting to me. As Interim Associate Head of Upper School I managed staff, observed and evaluated faculty, and sat on the Department Chair Committee. Determining staffing, infrastructure, and priorities for a function is familiar work.',
+  },
+  {
+    icon: BookOpen,
+    title: 'Building the professional learning, not just requiring it',
+    body: 'The role maintains a staff development program. I taught "Counseling the College Bound Student" at UCLA Extension for three years — a fully asynchronous course for 25–50 aspiring counselors per term — and co-chaired the WACAC Summer Counselor Tour. Designing learning for adults who then serve students is work I have already done at scale.',
+  },
+  {
+    icon: Accessibility,
+    title: 'Equity in practice, and discretion by default',
+    body: 'As a Disability Access Specialist I work inside ADA, IDEA, and Section 504 for a caseload of 250+ students, documenting sensitive matters in Maxient with the confidentiality that work demands. Dismantling barriers is not a statement of values for me; it is the daily mechanics of the job, done quietly and by the rules.',
   },
 ]
 
@@ -595,6 +629,14 @@ const ROLES = {
     fit: MSU_FIT,
     closer:
       'I would be honored to help shape experiences that enrich the lives of Roadrunners, inside and outside the classroom.',
+  },
+  dps: {
+    institution: 'Denver Public Schools',
+    title: 'Executive Director, Career and College Success',
+    lede: 'Every learner thrives when someone has helped them build a plan — and then made sure the credits, the credentials, and the connections behind that plan are actually there. Twenty years across K-12 counseling, university admissions, and community college access, spent on exactly that.',
+    fit: DPS_FIT,
+    closer:
+      'A fifth-generation Coloradan, home in Englewood, with a career spent bringing educators, families, colleges, and employers around a shared plan for a student. I would welcome the chance to do that work for DPS students, district-wide.',
   },
 }
 
