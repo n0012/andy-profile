@@ -346,36 +346,39 @@ const MSU_FIT = [
   },
 ]
 
+// Written in Andy's own voice, from his cover letters and letters of recommendation:
+// full sentences rather than fragments, spaced hyphens rather than em dashes, and none
+// of the "not X, it is Y" construction he flagged as sounding like a machine wrote it.
 const DPS_FIT = [
   {
     icon: Compass,
-    title: 'This job description is the career',
-    body: 'Career and college readiness is not an adjacent interest — it is what I have done for twenty years. Director of College Counseling at Francis Parker, guiding a quarter of each junior and senior class through postsecondary planning; 10th Grade Dean, working with 140 students and families a year on the plan before the plan. ICAP is the formal name for work I have led informally since 2005.',
+    title: 'The work I have been doing all along',
+    body: 'For twenty years, in one form or another, I have been helping students figure out what comes after high school. As Director of College Counseling at Francis Parker I worked with a quarter of each junior and senior class, and as the 10th Grade Dean I met with 140 students and families a year, often long before anyone was ready to talk about college. Those early conversations, when a student has no idea yet what is possible, are the ones I have always found most worth having.',
   },
   {
     icon: GraduationCap,
-    title: 'Twelve college credits runs through the community college',
-    body: 'The goal of 12 college credits for every graduate depends on concurrent enrollment working — and that pipeline lands at institutions like the one I work in today. At Arapahoe Community College I have evaluated transcripts for transferability and prerequisite credit in Banner and advised students on academic planning. I know where credits stick and where they quietly fail to count.',
+    title: 'Where the college credit actually lands',
+    body: 'The district’s goal of 12 college credits for every graduate depends on concurrent enrollment working, and those credits land at institutions like the one where I work now. At Arapahoe Community College I have evaluated transcripts for transferability and prerequisite credit, and I have sat with students who assumed a course would count and found out it did not. That is a frustrating conversation to have, and I would rather be on the side of it that keeps it from happening.',
   },
   {
     icon: Briefcase,
-    title: 'Partnerships with employers and institutions',
-    body: 'At COLLEDGE I built business development partnerships, including a college night program with UCLA and USC. At the University of Denver I coordinated 300 alumni and 200 faculty and staff volunteers across 30 cities. Cultivating partners who show up year after year — businesses, colleges, community organizations — is the part of this role I have the longest track record in.',
+    title: 'Building partnerships, and keeping them',
+    body: 'At COLLEDGE I developed business partnerships, including a college night program with UCLA and USC. Earlier, at the University of Denver, I coordinated 300 alumni and 200 faculty and staff volunteers across 30 cities for our interview program. As you well know, a partnership is only as good as the relationship behind it, and the partners worth having are the ones still answering the phone in year five.',
   },
   {
     icon: Users,
-    title: 'Leading at district scale',
-    body: 'At DU I ran the biannual Ammi Hyde program serving 3,000+ prospective undergraduates on a $350,000+ budget with staff reporting to me. As Interim Associate Head of Upper School I managed staff, observed and evaluated faculty, and sat on the Department Chair Committee. Determining staffing, infrastructure, and priorities for a function is familiar work.',
+    title: 'Running something large',
+    body: 'At the University of Denver I ran the Ammi Hyde interview program twice a year for more than 3,000 prospective undergraduates, on a budget north of $350,000, with program and visit staff reporting to me. Later, as Interim Associate Head of Upper School at Francis Parker, I managed staff, observed and evaluated faculty, and served on the Department Chair Committee. Figuring out what a program needs in the way of people, money and infrastructure is work I have done before, and enjoyed.',
   },
   {
     icon: BookOpen,
-    title: 'Building the professional learning, not just requiring it',
-    body: 'The role maintains a staff development program. I taught "Counseling the College Bound Student" at UCLA Extension for three years — a fully asynchronous course for 25–50 aspiring counselors per term — and co-chaired the WACAC Summer Counselor Tour. Designing learning for adults who then serve students is work I have already done at scale.',
+    title: 'Teaching the people who advise students',
+    body: 'For three years I taught “Counseling the College Bound Student” at UCLA Extension, a fully asynchronous course, to 25 to 50 aspiring counselors a term, and I co-chaired the WACAC Summer Counselor Tour. I enjoy this part of the work quite a bit. Helping one counselor get better at their job reaches far more students than I could ever reach on my own.',
   },
   {
     icon: Accessibility,
-    title: 'Equity in practice, and discretion by default',
-    body: 'As a Disability Access Specialist I work inside ADA, IDEA, and Section 504 for a caseload of 250+ students, documenting sensitive matters in Maxient with the confidentiality that work demands. Dismantling barriers is not a statement of values for me; it is the daily mechanics of the job, done quietly and by the rules.',
+    title: 'My two “whys”',
+    body: 'I have two “whys” for the work I do. One is my own experience with significant learning disabilities in school, which were fortunately diagnosed and accommodated, and I still remember my four pillars of support in grades K-12. Two is my first quarter at DU, when 9/11 fell on my second day of class and my parents had moved overseas for work. I was in my home state and had never felt more alone. Today I work within ADA, IDEA and Section 504 for a caseload of 250 students, where confidentiality is simply how the job is done.',
   },
 ]
 
@@ -633,10 +636,10 @@ const ROLES = {
   dps: {
     institution: 'Denver Public Schools',
     title: 'Executive Director, Career and College Success',
-    lede: 'Every learner thrives when someone has helped them build a plan — and then made sure the credits, the credentials, and the connections behind that plan are actually there. Twenty years across K-12 counseling, university admissions, and community college access, spent on exactly that.',
+    lede: 'Thank you for considering my application. I have spent twenty years on both sides of the transition out of high school, in university admission offices, in independent school college counseling offices, and now at a Colorado community college, and I would be glad to bring all of it to the students of Denver Public Schools.',
     fit: DPS_FIT,
     closer:
-      'A fifth-generation Coloradan, home in Englewood, with a career spent bringing educators, families, colleges, and employers around a shared plan for a student. I would welcome the chance to do that work for DPS students, district-wide.',
+      'I am a fifth-generation Coloradan, home in Englewood after two decades on the California coast. At the end of the day, helping students earlier in the process, especially those who do not come by “it” naturally, is what keeps me in this profession, and I would be humbled to do that work on behalf of DPS students.',
   },
 }
 
