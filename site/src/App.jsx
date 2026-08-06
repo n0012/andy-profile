@@ -34,19 +34,23 @@ const APPROACH = [
   {
     icon: Accessibility,
     title: 'Access',
-    body: 'Removing the barriers between a student and their education — whether that barrier is a disability accommodation, a financial aid package, or simply not knowing which question to ask.',
+    body: 'Much of what stands between a student and their education can be removed, whether it is a disability accommodation, a financial aid package, or simply not knowing which question to ask. A good part of my job has always been helping a student find the question.',
   },
   {
     icon: Handshake,
     title: 'Belonging',
-    body: 'Advising affinity groups, co-leading student support teams, and building the everyday conditions where students recognize themselves as part of a community rather than visitors to it.',
+    body: 'I have advised affinity groups and co-led student support teams over the years. Belonging tends to get built in small and ordinary ways, usually long before anyone thinks to call it that.',
   },
   {
     icon: Compass,
-    title: 'Relational Outreach',
-    body: 'Recruitment built on long-horizon trust with counselors, educators, and families — partnerships that outlast any single admission cycle, not transactions that end at deposit day.',
+    title: 'Outreach built on relationships',
+    body: 'Recruitment works when counselors, educators and families trust you, and that trust takes years to earn. I have always tried to build relationships that carry on well past any single admission cycle.',
   },
 ]
+
+// The softer telling of the two “whys”. The fuller version, with 9/11 and the move
+// overseas, stays on the DPS page — this one is public to anyone who finds the site.
+const WHY = 'Some of this is personal. I had significant learning disabilities in school, and I was fortunate that they were diagnosed and accommodated, and fortunate again that people showed up for me at DU when I badly needed them to. Helping students who do not come by “it” naturally is what has kept me in this profession.'
 
 const EXPERIENCE = [
   {
@@ -264,12 +268,13 @@ const PERSONAL = [
   {
     icon: ChefHat,
     title: 'In the kitchen',
-    detail: 'An enthusiastic cook — the household job nobody has to be talked into.',
+    detail: 'An enthusiastic cook who started out baking, and is still best known for the carbohydrates.',
   },
   {
     icon: Car,
     title: 'Classic cars',
-    detail: 'A long-running soft spot for the ones built before the computers took over.',
+    detail:
+      'A soft spot for land yachts and V8 horsepower, and an eye on which EV will be the next daily driver.',
   },
   {
     icon: Dog,
@@ -283,66 +288,66 @@ const PERSONAL = [
 const CU_FIT = [
   {
     icon: Users,
-    title: 'Supervising and mentoring teams',
-    body: 'The role supervises four. I have hired, onboarded, and managed staff at every stop — program and visit staff at the University of Denver, the librarian and assistant librarian as Interim Associate Head of Upper School, peer advisors in TRIO, and full and contract hires at COLLEDGE. Nineteen years of it, including formal observation and evaluation of faculty.',
+    title: 'Hiring and looking after a team',
+    body: 'I have hired, onboarded and managed staff at nearly every stop along the way: program and visit staff at the University of Denver, the librarian and assistant librarian when I was Interim Associate Head of Upper School, peer advisors in TRIO, and both contract and full-time hires at COLLEDGE. Some of that included formally observing and evaluating faculty, which taught me how much care a good evaluation actually takes.',
   },
   {
     icon: Compass,
-    title: 'Both pathways, from both sides',
-    body: 'The role covers First Year and Transfer. I recruited first-year students nationally for six years at DU — and today I work inside a Colorado community college, alongside the exact students who transfer to CU Boulder. I know what the transfer pathway looks like from the sending end, which is where it usually breaks.',
+    title: 'First-year and transfer, from both ends',
+    body: 'I recruited first-year students nationally for six years at the University of Denver, and today I work inside a Colorado community college, alongside the very students who go on to transfer to CU Boulder. Having seen the transfer pathway from the sending end, I have a good sense of where students tend to get stuck.',
   },
   {
     icon: MapPin,
-    title: 'Colorado roots, not a relocation',
-    body: 'Fifth-generation Colorado native, University of Denver graduate, and an RMACAC board member. The rural districts, community organizations, and counselor relationships this position depends on are ones I have spent a career building here.',
+    title: 'Colorado roots',
+    body: 'I am a fifth-generation Coloradan, a University of Denver graduate and a former RMACAC board member. The rural districts, community organizations and counselor relationships this position depends on are ones I have spent a career building here at home.',
   },
   {
     icon: BookOpen,
-    title: 'Building the training, not just delivering it',
-    body: 'The role trains the recruitment team. I taught "Counseling the College Bound Student" at UCLA Extension for three years, advising 25–50 aspiring counselors per term, and co-chaired the WACAC Summer Counselor Tour. Designing enablement for other professionals is work I have already done at scale.',
+    title: 'Training other counselors',
+    body: 'For three years I taught “Counseling the College Bound Student” at UCLA Extension, advising 25 to 50 aspiring counselors a term, and I co-chaired the WACAC Summer Counselor Tour. Designing something that makes other professionals better at their work is among the most satisfying things I have done.',
   },
   {
     icon: Handshake,
-    title: 'Trust rather than transactions',
-    body: 'Recruitment begins with authentic partnerships among school counselors, educators, families, and community leaders — relationships that outlast a single admission cycle rather than ending at deposit day.',
+    title: 'Relationships that last',
+    body: 'Recruitment begins with genuine partnerships among school counselors, educators, families and community leaders. As you well know, those relationships are what carry a program from one year to the next, long after any single admission cycle has closed.',
   },
   {
     icon: Accessibility,
-    title: 'Equitable review, from experience',
-    body: 'The role informs admission review so every applicant gets fair consideration. I have read applications on the university side and written the recommendations on the counseling side, and I now spend my days on accommodations and access law. I know concretely where a review process quietly disadvantages a student.',
+    title: 'Reading applications fairly',
+    body: 'I have read applications on the university side and written the recommendations on the counseling side, and I now spend my days on accommodations and access law. That combination has given me a practical sense of where a review process can disadvantage a student without anyone intending it.',
   },
 ]
 
 const MSU_FIT = [
   {
     icon: Handshake,
-    title: 'Belonging is the whole career',
-    body: 'Nearly twenty years drawn to the work that helps students find connection, purpose, and confidence. Admissions, student affairs, college counseling, disability access — different offices, one consistent aim: communities where students feel supported, challenged, and empowered.',
+    title: 'Why this work',
+    body: 'For nearly twenty years I have been drawn to the work that helps students find connection, purpose and confidence. Admissions, student affairs, college counseling, disability access - the offices have changed, but what I am trying to do inside them has not.',
   },
   {
     icon: Users,
     title: 'Advising student leaders and affinity groups',
-    body: 'Co-advisor to the GSA and LGBTQ+ student affinity groups at Francis Parker, and co-advisor to an advisory group followed from 9th through 12th grade. Today I volunteer with the LGBTQ+ Affinity Group and Student Affairs events at ACC. Advising student organizations is familiar ground.',
+    body: 'At Francis Parker I was co-advisor to the GSA and to LGBTQ+ student affinity groups, and co-advisor to an advisory group I followed from ninth grade through twelfth. Today I volunteer with the LGBTQ+ Affinity Group and at Student Affairs events at Arapahoe Community College. This is familiar and genuinely enjoyable ground for me.',
   },
   {
     icon: Compass,
-    title: 'Leading teams, staying student-centered',
-    body: 'Supervised staff and served on the Upper School leadership team across three roles at Francis Parker, including Interim Associate Head. Effective leadership is grounded in collaboration and listening — and in environments where colleagues, not only students, feel valued.',
+    title: 'Leading a team',
+    body: 'I supervised staff and served on the Upper School leadership team across three roles at Francis Parker, including a year as Interim Associate Head. What I took from it is that leadership is mostly collaboration and listening, and that colleagues need to feel valued just as much as students do.',
   },
   {
     icon: BookOpen,
-    title: 'Designing programs, not just running them',
-    body: 'Built "Pastries and Planning" for TRIO students facing executive-functioning barriers, accessible workshops on study skills and note taking at ACC, and a full asynchronous course for aspiring counselors at UCLA Extension. I like building the thing that brings people together.',
+    title: 'Building programs',
+    body: 'I built “Pastries and Planning” for TRIO students who were up against executive-functioning barriers, accessible workshops on study skills and note taking at ACC, and a full asynchronous course for aspiring counselors at UCLA Extension. I like building the thing that brings people together.',
   },
   {
     icon: Accessibility,
-    title: 'MSU Denver’s students are the ones I serve now',
-    body: 'In TRIO I served first-generation, low-income, and disabled students directly. I work at a Colorado community college today — many of these students transfer to MSU Denver. I know this population because I am with them every week.',
+    title: 'The students I work with now',
+    body: 'In TRIO I served first-generation, low-income and disabled students directly, and I work at a Colorado community college today, where many students go on to transfer to MSU Denver. I know this population because I am with them every week.',
   },
   {
     icon: Award,
-    title: 'Steady when it gets complicated',
-    body: 'Appointed leader of the Student Support Team at Francis Parker, meeting weekly on students of concern, and recognized with the Spirit of Service Award for going above and beyond for the community. Complex student situations are where this work is actually decided.',
+    title: 'When it gets complicated',
+    body: 'At Francis Parker I was appointed to lead the Student Support Team, which met weekly about students of concern, and I was later recognized with the Spirit of Service Award. Quite frankly, the complicated situations are where this work is actually decided, and I have never minded being the one in the room for them.',
   },
 ]
 
@@ -378,7 +383,7 @@ const DPS_FIT = [
   {
     icon: Accessibility,
     title: 'My two “whys”',
-    body: 'I have two “whys” for the work I do. One is my own experience with significant learning disabilities in school, which were fortunately diagnosed and accommodated, and I still remember my four pillars of support in grades K-12. Two is my first quarter at DU, when 9/11 fell on my second day of class and my parents had moved overseas for work. I was in my home state and had never felt more alone. Today I work within ADA, IDEA and Section 504 for a caseload of 250 students, where confidentiality is simply how the job is done.',
+    body: 'I have two “whys” for the work I do. One is my own experience with significant learning disabilities in school, which were fortunately diagnosed and accommodated, and I still remember my four pillars of support in grades K-12. Two is my first quarter at DU, when 9/11 fell on my second day of class and my parents had moved overseas for work. I was in my home state and had never felt more alone. What turned it around was the people who showed up, particularly the staff of DU’s Learning Effectiveness Program, who helped me find my footing and my voice. I have spent the career since on the other side of that, and today I work within ADA, IDEA and Section 504 for a caseload of 250 students, where confidentiality is simply how the job is done.',
   },
 ]
 
@@ -444,8 +449,8 @@ const Hero = () => (
           Student Advocate
         </p>
         <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft">
-          Twenty years spent widening access to higher education — in admissions offices,
-          counseling offices, and now disability access services.
+          I have spent twenty years widening access to higher education, in admission offices,
+          in college counseling offices, and now in disability access services.
         </p>
         <div className="mt-5 flex flex-wrap justify-center gap-2 sm:justify-start">
           <Pill icon={MapPin} label="Englewood, Colorado" />
@@ -481,6 +486,7 @@ const Approach = () => (
       <h2 id="approach-heading" className="mt-3 font-display text-3xl font-semibold text-ink">
         How I work with students
       </h2>
+      <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">{WHY}</p>
       <div className="mt-10 grid gap-6 md:grid-cols-3">
         {APPROACH.map(({ icon: Icon, title, body }) => (
           <div key={title} className="rounded-xl border border-pine/15 bg-white p-6 shadow-sm">
@@ -639,7 +645,7 @@ const ROLES = {
     lede: 'Thank you for considering my application. I have spent twenty years on both sides of the transition out of high school, in university admission offices, in independent school college counseling offices, and now at a Colorado community college, and I would be glad to bring all of it to the students of Denver Public Schools.',
     fit: DPS_FIT,
     closer:
-      'I am a fifth-generation Coloradan, home in Englewood after two decades on the California coast. At the end of the day, helping students earlier in the process, especially those who do not come by “it” naturally, is what keeps me in this profession, and I would be humbled to do that work on behalf of DPS students.',
+      'I am a fifth-generation Coloradan, home in Englewood after over a decade on the California coast. At the end of the day, helping students earlier in the process, especially those who do not come by “it” naturally, is what keeps me in this profession, and I would be humbled to do that work on behalf of DPS students.',
   },
 }
 
@@ -676,8 +682,9 @@ const Personal = () => (
         The person, not just the resume
       </h2>
       <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-        A fifth-generation Coloradan, back home in Englewood after two decades on the
-        California coast. The instinct to build community does not switch off at five.
+        I am a fifth-generation Coloradan, back home in Englewood after over a decade on the
+        California coast. Outside of work I tend to end up doing some version of the same
+        thing, which is helping people find their people.
       </p>
 
       <h3 className="mt-10 text-sm font-semibold uppercase tracking-[0.15em] text-clay">
@@ -714,8 +721,8 @@ const Contact = () => (
     <div className="mx-auto max-w-4xl px-6 py-14 text-center md:py-20">
       <h2 className="font-display text-3xl font-semibold">Let&apos;s talk</h2>
       <p className="mx-auto mt-3 max-w-lg leading-relaxed text-pine-soft">
-        I&apos;m open to conversations about student affairs, access, and enrollment roles
-        across Colorado.
+        I am glad to talk about student affairs, access, enrollment, and college and career
+        readiness roles across Colorado.
       </p>
       <a
         href={`mailto:${email}`}
